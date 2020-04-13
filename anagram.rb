@@ -14,7 +14,7 @@ return -1 if string.size.odd?
 
 # if the checked letter exists on the right side delete it ONLY ON FIRST OCCURANCE (each iterates once for each (duh))
 # a variable could have been made for right.index(letter) but then it would have to be a do end block. I just like one-liners more :)
-left.each { |letter| right.delete_at(right.index(letter)) unless right.index(letter).nil?; right.size }
+left.each { |letter| right.delete_at(right.index(letter)) unless right.index(letter).nil? }
 
 # return the size / length of the right - left string half
 # this could have also been done at the end of the block
